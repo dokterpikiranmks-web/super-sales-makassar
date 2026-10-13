@@ -8,6 +8,14 @@ _backend_dir = Path(__file__).resolve().parent.parent
 DATA_FILE = _backend_dir / "data" / "leads.json" if (_backend_dir / "data" / "leads.json").exists() else _backend_dir.parent / "data" / "leads.json"
 
 def load_leads() -> list:
+    try:
+        import database
+        db_leads = database.get_all_leads()
+        if db_leads:
+            return db_leads
+    except Exception as e:
+        print(f"[FU AGENT DB ERROR]: {e}")
+
     if not DATA_FILE.exists():
         return []
     try:
@@ -17,9 +25,19 @@ def load_leads() -> list:
         return []
 
 def save_leads(leads: list):
-    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(leads, f, indent=2, ensure_ascii=False)
+    try:
+        import database
+        for l in leads:
+            database.upsert_lead(l)
+    except Exception as e:
+        print(f"[FU AGENT DB SAVE ERROR]: {e}")
+
+    try:
+        DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with open(DATA_FILE, "w", encoding="utf-8") as f:
+            json.dump(leads, f, indent=2, ensure_ascii=False)
+    except:
+        pass
 
 def get_followup_message(lead: dict, elapsed_hours: float) -> str:
     prod_key = lead.get("product_key", "totok_saraf")

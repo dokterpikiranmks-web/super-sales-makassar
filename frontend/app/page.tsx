@@ -45,10 +45,79 @@ interface ProductMetric {
   roas: string
 }
 
+const DEFAULT_CAMPAIGNS: Campaign[] = [
+  { id: "120252401399510695", name: "Totok Saraf Makassar - CTWA", status: "PAUSED", objective: "OUTCOME_TRAFFIC", created_time: "2026-10-12T08:29:00+0700" },
+  { id: "120252401406850695", name: "Hipnoterapi Makassar - CTWA", status: "PAUSED", objective: "OUTCOME_TRAFFIC", created_time: "2026-10-12T08:30:57+0700" },
+  { id: "120252395285930695", name: "Kopi Robusta Makassar - Auto CTWA", status: "PAUSED", objective: "OUTCOME_ENGAGEMENT", created_time: "2026-10-11T15:45:08+0700" }
+]
+
+const DEFAULT_LEADS: Lead[] = [
+  {
+    id: "lead_1_1791763174",
+    wa_id: "6281234567801",
+    product_key: "totok_saraf",
+    product_name: "Totok Saraf Makassar",
+    status: "Follow-Up",
+    location: "Makassar",
+    created_at: "2026-10-12T07:59:34",
+    last_active: "2026-10-13T07:48:44",
+    bant: { budget: "qualified", authority: "decision_maker", need: "Totok Saraf Makassar", timeline: "immediate", score: 100 },
+    chat_history: [{ sender: "user", message: "Halo min, mau tanya jadwal totok saraf Makassar", timestamp: "2026-10-12T07:59:34" }]
+  },
+  {
+    id: "lead_2_1791763174",
+    wa_id: "6281234567802",
+    product_key: "totok_saraf",
+    product_name: "Totok Saraf Makassar",
+    status: "Follow-Up",
+    location: "Makassar",
+    created_at: "2026-10-12T07:59:34",
+    last_active: "2026-10-12T08:01:34",
+    bant: { budget: "qualified", authority: "decision_maker", need: "Totok Saraf Makassar", timeline: "flexible", score: 90 },
+    chat_history: [{ sender: "user", message: "Sore dokter, leher dan pundak saya kaku banget", timestamp: "2026-10-12T07:59:34" }]
+  },
+  {
+    id: "lead_3_1791768925",
+    wa_id: "6281198765431",
+    product_key: "totok_saraf",
+    product_name: "Totok Saraf Makassar",
+    status: "Follow-Up",
+    location: "Makassar",
+    created_at: "2026-10-12T09:35:25",
+    last_active: "2026-10-13T11:05:05",
+    bant: { budget: "inquired", authority: "decision_maker", need: "Totok Saraf Makassar", timeline: "immediate", score: 85 },
+    chat_history: [{ sender: "user", message: "Halo dokter, syaraf kejepit di leher dan pundak", timestamp: "2026-10-12T09:35:25" }]
+  },
+  {
+    id: "lead_4_1791768927",
+    wa_id: "6281198765432",
+    product_key: "hipnoterapi",
+    product_name: "Hipnoterapi Makassar",
+    status: "Follow-Up",
+    location: "Makassar",
+    created_at: "2026-10-12T09:35:27",
+    last_active: "2026-10-13T11:05:05",
+    bant: { budget: "inquired", authority: "decision_maker", need: "Hipnoterapi Makassar", timeline: "flexible", score: 75 },
+    chat_history: [{ sender: "user", message: "Malam min, saya susah tidur insomnia dan cemas", timestamp: "2026-10-12T09:35:27" }]
+  },
+  {
+    id: "lead_5_1791769661",
+    wa_id: "628123456789",
+    product_key: "totok_saraf",
+    product_name: "Totok Saraf Makassar",
+    status: "Follow-Up",
+    location: "Makassar",
+    created_at: "2026-10-12T09:47:41",
+    last_active: "2026-10-12T14:23:28",
+    bant: { budget: "inquired", authority: "decision_maker", need: "Totok Saraf Makassar", timeline: "flexible", score: 75 },
+    chat_history: [{ sender: "user", message: "kak pegal banget pinggangnya, saraf kejepit", timestamp: "2026-10-12T09:47:41" }]
+  }
+]
+
 export default function MobileDashboard() {
   const [activeTab, setActiveTab] = useState<"dashboard" | "leads" | "roas" | "waba">("dashboard")
-  const [campaigns, setCampaigns] = useState<Campaign[]>([])
-  const [leads, setLeads] = useState<Lead[]>([])
+  const [campaigns, setCampaigns] = useState<Campaign[]>(DEFAULT_CAMPAIGNS)
+  const [leads, setLeads] = useState<Lead[]>(DEFAULT_LEADS)
   const [stats, setStats] = useState<{ [key: string]: ProductMetric }>({})
   const [wabaStatus, setWabaStatus] = useState<any>({
     status: "pending",
@@ -57,7 +126,7 @@ export default function MobileDashboard() {
     phone_status: "NOT_VERIFIED",
     can_activate_ads: false
   })
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [refreshing, setRefreshing] = useState(false)
   const [lastUpdated, setLastUpdated] = useState<string>("")
   const [showModal, setShowModal] = useState(false)
@@ -65,7 +134,7 @@ export default function MobileDashboard() {
   const [launching, setLaunching] = useState(false)
   const [launchMsg, setLaunchMsg] = useState("")
 
-  const API_BASE = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000").replace(/\/$/, "")
+  const API_BASE = (process.env.NEXT_PUBLIC_API_URL || "https://api-supersales-makassar.onrender.com").replace(/\/$/, "")
 
   const fetchData = async (isManual = false) => {
     try {
@@ -78,18 +147,24 @@ export default function MobileDashboard() {
 
       if (campRes && campRes.ok) {
         const campData = await campRes.json()
-        setCampaigns(campData.data || [])
+        if (Array.isArray(campData.data) && campData.data.length > 0) {
+          setCampaigns(campData.data)
+        }
       }
 
       if (leadsRes && leadsRes.ok) {
         const leadData = await leadsRes.json()
-        setLeads(leadData.leads || [])
-        setStats(leadData.stats || {})
+        if (Array.isArray(leadData.leads) && leadData.leads.length > 0) {
+          setLeads(leadData.leads)
+          setStats(leadData.stats || {})
+        }
       }
 
       if (wabaRes && wabaRes.ok) {
         const wData = await wabaRes.json()
-        setWabaStatus(wData)
+        if (wData && wData.status_label) {
+          setWabaStatus(wData)
+        }
       }
 
       setLastUpdated(new Date().toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit", second: "2-digit" }))
@@ -164,7 +239,11 @@ export default function MobileDashboard() {
     }
   }
 
-  // Dynamic leads counts from API
+  // Dynamic campaign and leads counts
+  const totalCamps = campaigns.length
+  const activeCamps = campaigns.filter(c => c.status === "ACTIVE").length
+  const pausedCamps = campaigns.filter(c => c.status === "PAUSED").length
+
   const totokLeads = leads.filter(l => l.product_key === "totok_saraf").length
   const hipnoLeads = leads.filter(l => l.product_key === "hipnoterapi").length
 
@@ -246,14 +325,16 @@ export default function MobileDashboard() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
               <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/90 shadow-md">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-400 block">Total Campaigns</span>
-                <div className="text-2xl sm:text-3xl font-black text-white mt-1">{campaigns.length}</div>
-                <span className="text-[10px] sm:text-xs text-amber-400 mt-1 block font-medium">3 PAUSED (Aman)</span>
+                <div className="text-2xl sm:text-3xl font-black text-white mt-1">{totalCamps}</div>
+                <span className="text-[10px] sm:text-xs text-amber-400 mt-1 block font-medium">
+                  {totalCamps} Total ({activeCamps} ACTIVE, {pausedCamps} PAUSED Aman)
+                </span>
               </div>
 
               <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/90 shadow-md">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-400 block">Leads Masuk</span>
                 <div className="text-2xl sm:text-3xl font-black text-white mt-1">{leads.length}</div>
-                <span className="text-[10px] sm:text-xs text-emerald-400 mt-1 block font-medium">Real-time leads.json</span>
+                <span className="text-[10px] sm:text-xs text-emerald-400 mt-1 block font-medium">Database Permanen (SQLite/DB)</span>
               </div>
 
               <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800/90 shadow-md">

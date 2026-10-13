@@ -92,6 +92,14 @@ PRODUCT_CATALOG = {
 }
 
 def load_leads() -> list:
+    try:
+        import database
+        db_leads = database.get_all_leads()
+        if db_leads:
+            return db_leads
+    except Exception as e:
+        print(f"[CS AGENT DB ERROR]: {e}")
+
     if not DATA_FILE.exists():
         return []
     try:
@@ -101,9 +109,19 @@ def load_leads() -> list:
         return []
 
 def save_leads(leads: list):
-    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(leads, f, indent=2, ensure_ascii=False)
+    try:
+        import database
+        for l in leads:
+            database.upsert_lead(l)
+    except Exception as e:
+        print(f"[CS AGENT DB SAVE ERROR]: {e}")
+
+    try:
+        DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with open(DATA_FILE, "w", encoding="utf-8") as f:
+            json.dump(leads, f, indent=2, ensure_ascii=False)
+    except:
+        pass
 
 def detect_product(ad_id: str = None, campaign_id: str = None, message_body: str = "") -> tuple:
     if ad_id:
