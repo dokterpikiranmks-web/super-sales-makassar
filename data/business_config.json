@@ -1,8 +1,17 @@
 {
   "location": "Makassar - key 973751",
   "waba": "Kopi Robusta WABA - +62 811-443-327",
+  "role_persona": "Asisten Profesional Klinik Dokter Pikiran",
+  "sop_flow": [
+    "1. Sapa formal hangat dengan Pak/Bu: Selamat siang Pak/Bu, terima kasih telah menghubungi [Nama Produk]",
+    "2. Tanya langsung tanpa tebak: Maaf Pak/Bu, keluhannya apa?",
+    "3. Setelah leads cerita: Jawab cerdas sesuai DNA, hubungkan keluhan dengan mekanisme terapi secara umum, tanpa mendiagnosa individu + cantumkan disclaimer komplementer",
+    "4. Tawarkan pemeriksaan: Jika berkenan, kami bisa bantu jadwalkan sesi terapi untuk pemeriksaan lebih lanjut. Bapak/Ibu berkenan hari apa?",
+    "5. Booking dengan 2 pilihan jam."
+  ],
   "products": {
     "totok_saraf": {
+      "nama": "Totok Saraf Makassar",
       "price": 150000,
       "duration": "60 menit",
       "cogs": 20000,
@@ -11,6 +20,26 @@
       "target_tier": "mass_market",
       "age": "25-60",
       "economic": "all",
+      "dna_positioning": "Metode pengobatan komplementer akupresur untuk membantu pemulihan, bukan spa relaksasi",
+      "mekanisme": "Merangsang titik saraf untuk membantu melancarkan peredaran darah dan mendukung fungsi saraf sebagai terapi pendamping",
+      "sapaan": "Pak/Bu",
+      "forbidden_words": [
+        "spa",
+        "pijat enak",
+        "manja",
+        "lulur",
+        "relaksasi manja",
+        "kak"
+      ],
+      "allowed_usp": [
+        "Terapis Pria profesional berseragam medis",
+        "Sarung Tangan steril",
+        "Pasien tetap Baju Lengkap",
+        "Ruang terapi higienis",
+        "Terapi Komplementer"
+      ],
+      "disclaimer": "Kami tidak mendiagnosa dan tidak menggantikan pemeriksaan medis. Silakan tetap konsultasi dokter untuk kondisi medis Bapak/Ibu.",
+      "harga": "Rp 150.000 / 60 menit (Konsultasi + Pemeriksaan + Sesi Terapi)",
       "interests": [
         "Pijat refleksi",
         "Syaraf kejepit",
@@ -22,16 +51,38 @@
       "target_closing": 30
     },
     "hipnoterapi": {
+      "nama": "Hipnoterapi Klinis Dokter Pikiran Makassar",
       "price_1": 600000,
       "price_3": 1500000,
       "duration": "1-2 jam",
       "cogs_1": 30000,
       "cogs_3": 90000,
       "color": "blue",
-      "gender": "male therapist",
+      "gender": "male therapist C.Ht. bersertifikasi klinis",
       "target_tier": "middle_up",
       "age": "28-55",
       "economic": "menengah ke atas",
+      "dna_positioning": "Metode terapi klinis psikologis dan restrukturisasi bawah sadar terstandar ilmiah, bukan praktik mistis, gaib, atau perdukunan",
+      "mekanisme": "Mengakses gelombang otak rileks (alfa-theta) untuk merilis akar masalah emosi bawah sadar, meredakan kecemasan sistem saraf, dan memprogram ulang pola pikir secara saintifik",
+      "sapaan": "Pak/Bu",
+      "forbidden_words": [
+        "gaib",
+        "mistis",
+        "dukun",
+        "guna-guna",
+        "santet",
+        "tenaga dalam",
+        "batin ajaib",
+        "kak"
+      ],
+      "allowed_usp": [
+        "Terapis Pria C.Ht. Bersertifikasi Klinis Resmi",
+        "Privasi 1-on-1 Terjaga Penuh",
+        "Metode Ilmiah Berbasis Hipnoterapi Klinis",
+        "Bonus Value Stack Rp 2.398.000 (E-book Detox Emosi + Audio Sugesti Relaksasi + Pendampingan 21 Hari)"
+      ],
+      "disclaimer": "Layanan ini adalah terapi komplementer psikologis untuk kesehatan mental dan emosi. Kami tidak memberikan diagnosa psikiatri klinis obat-obatan farmakologi. Silakan tetap berkonsultasi dengan dokter/psikiater untuk kondisi medis klinis Bapak/Ibu.",
+      "harga": "1 Sesi Rp 600.000 (termasuk bonus E-book + Audio) • Paket Intensif 3 Sesi Rp 1.500.000 (hemat 300rb + pendampingan 21 hari senilai Rp 2jt)",
       "interests": [
         "Entrepreneur",
         "Professional",

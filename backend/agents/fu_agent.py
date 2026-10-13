@@ -45,23 +45,23 @@ def get_followup_message(lead: dict, elapsed_hours: float) -> str:
     if elapsed_hours >= 24:
         # Template Follow-up 24 Jam
         if prod_key == "totok_saraf":
-            return "Kak, pegalnya jangan ditahan kelamaan, nanti jadi saraf kejepit. Slot besok pagi masih ada."
+            return "Selamat siang Pak/Bu, keluhan nyeri atau pegalnya sebaiknya tidak dibiarkan berlarut agar peredaran darah dan fungsi saraf segera terbantu pulih. Untuk pemeriksaan dan sesi terapi langsung oleh terapis profesional kami, besok pagi masih tersedia slot jam 10.00 WITA. Bapak/Ibu berkenan kami jadwalkan?"
         elif prod_key == "hipnoterapi":
-            return "Kak, kebanyakan klien yang sembuh total ambil Paket 3 sesi Rp 1,5jt (hemat 300rb) karena ada pendampingan 21 hari Rp 2jt. Hasilnya lebih permanen. Mau saya keep slot untuk Paket 3 sesi kak?"
+            return "Selamat siang Pak/Bu, sebagian besar klien kami yang ingin pemulihan insomnia atau kecemasan secara tuntas memilih Paket 3 Sesi Klinis (Rp 1.500.000, hemat Rp 300rb) dengan pendampingan komprehensif 21 hari senilai Rp 2jt agar hasilnya lebih permanen di alam bawah sadar. Apakah Bapak/Ibu berkenan kami siapkan jadwalnya?"
         elif prod_key == "kopi_robusta":
-            return "Promo gratis ongkir Makassar hari terakhir kak"
+            return "Selamat siang Pak/Bu, sekadar menginfokan promo gratis ongkir area Makassar berlaku hingga hari ini. Bapak/Ibu berkenan memesan?"
         else:
-            return "Halo kak, penawaran promo kami di Makassar masih tersedia hari ini ya kak."
+            return "Selamat siang Pak/Bu, apakah ada informasi tambahan yang dapat kami bantu terkait jadwal terapi Bapak/Ibu?"
     elif elapsed_hours >= 3:
         # Template Follow-up 3 Jam
         if prod_key == "totok_saraf":
-            return "Halo kak, slot Totok Saraf Makassar sore ini jam 4 & 7 masih ada kak. Mau booking jam berapa? Sesi 60 menit Rp 150rb sudah termasuk pemeriksaan."
+            return "Selamat siang Pak/Bu, untuk terapi Totok Saraf Makassar, slot hari ini jam 16.00 WITA atau besok jam 10.00 WITA masih tersedia. Sesi 60 menit Rp 150.000 sudah termasuk konsultasi, pemeriksaan titik saraf, dan terapi dengan sarung tangan medis. Bapak/Ibu berkenan jam berapa?"
         elif prod_key == "hipnoterapi":
-            return "Kak, untuk insomnia & cemasnya, sesi 1-2 jam Rp 600rb sudah termasuk bonus E-book + Audio senilai 398rb. Mau coba 1 sesi dulu kak?"
+            return "Selamat siang Pak/Bu, untuk penanganan keluhan insomnia atau kecemasan, sesi hipnoterapi klinis 1-2 jam (Rp 600.000) sudah mencakup bonus audio relaksasi & e-book senilai Rp 398.000. Bapak/Ibu berkenan kami jadwalkan hari ini jam 16.00 atau besok jam 10.00 WITA?"
         elif prod_key == "kopi_robusta":
-            return "Halo kak, jadi pesan Kopi nya berapa?"
+            return "Selamat siang Pak/Bu, apakah ada yang bisa kami bantu untuk pemesanan Kopi Robusta Makassar?"
         else:
-            return "Halo kak, ada yang bisa kami bantu lagi mengenai layanannya?"
+            return "Selamat siang Pak/Bu, ada yang bisa kami bantu lagi mengenai jadwal konsultasi?"
             
     return None
 
