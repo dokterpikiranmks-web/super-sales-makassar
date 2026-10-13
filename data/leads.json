@@ -143,6 +143,12 @@
         "message": "Halo kak, slot Totok Saraf Makassar sore ini jam 4 & 7 masih ada kak. Mau booking jam berapa? Sesi 60 menit Rp 150rb sudah termasuk pemeriksaan.",
         "timestamp": "2026-10-12T14:23:28.822847",
         "stage": "3h"
+      },
+      {
+        "sender": "fu_agent",
+        "message": "Kak, pegalnya jangan ditahan kelamaan, nanti jadi saraf kejepit. Slot besok pagi masih ada.",
+        "timestamp": "2026-10-13T11:05:05.400213",
+        "stage": "24h"
       }
     ],
     "location": "Makassar",
@@ -151,6 +157,11 @@
         "stage": "3h",
         "sent_at": "2026-10-12T14:23:28.822847",
         "message": "Halo kak, slot Totok Saraf Makassar sore ini jam 4 & 7 masih ada kak. Mau booking jam berapa? Sesi 60 menit Rp 150rb sudah termasuk pemeriksaan."
+      },
+      {
+        "stage": "24h",
+        "sent_at": "2026-10-13T11:05:05.400213",
+        "message": "Kak, pegalnya jangan ditahan kelamaan, nanti jadi saraf kejepit. Slot besok pagi masih ada."
       }
     ]
   },
@@ -188,6 +199,12 @@
         "message": "Kak, untuk insomnia & cemasnya, sesi 1-2 jam Rp 600rb sudah termasuk bonus E-book + Audio senilai 398rb. Mau coba 1 sesi dulu kak?",
         "timestamp": "2026-10-12T14:23:28.822847",
         "stage": "3h"
+      },
+      {
+        "sender": "fu_agent",
+        "message": "Kak, kebanyakan klien yang sembuh total ambil Paket 3 sesi Rp 1,5jt (hemat 300rb) karena ada pendampingan 21 hari Rp 2jt. Hasilnya lebih permanen. Mau saya keep slot untuk Paket 3 sesi kak?",
+        "timestamp": "2026-10-13T11:05:05.400213",
+        "stage": "24h"
       }
     ],
     "location": "Makassar",
@@ -196,6 +213,11 @@
         "stage": "3h",
         "sent_at": "2026-10-12T14:23:28.822847",
         "message": "Kak, untuk insomnia & cemasnya, sesi 1-2 jam Rp 600rb sudah termasuk bonus E-book + Audio senilai 398rb. Mau coba 1 sesi dulu kak?"
+      },
+      {
+        "stage": "24h",
+        "sent_at": "2026-10-13T11:05:05.400213",
+        "message": "Kak, kebanyakan klien yang sembuh total ambil Paket 3 sesi Rp 1,5jt (hemat 300rb) karena ada pendampingan 21 hari Rp 2jt. Hasilnya lebih permanen. Mau saya keep slot untuk Paket 3 sesi kak?"
       }
     ]
   },
@@ -233,6 +255,12 @@
         "message": "Halo kak, slot Totok Saraf Makassar sore ini jam 4 & 7 masih ada kak. Mau booking jam berapa? Sesi 60 menit Rp 150rb sudah termasuk pemeriksaan.",
         "timestamp": "2026-10-12T14:23:28.822847",
         "stage": "3h"
+      },
+      {
+        "sender": "fu_agent",
+        "message": "Kak, pegalnya jangan ditahan kelamaan, nanti jadi saraf kejepit. Slot besok pagi masih ada.",
+        "timestamp": "2026-10-13T11:05:05.400213",
+        "stage": "24h"
       }
     ],
     "location": "Makassar",
@@ -241,6 +269,11 @@
         "stage": "3h",
         "sent_at": "2026-10-12T14:23:28.822847",
         "message": "Halo kak, slot Totok Saraf Makassar sore ini jam 4 & 7 masih ada kak. Mau booking jam berapa? Sesi 60 menit Rp 150rb sudah termasuk pemeriksaan."
+      },
+      {
+        "stage": "24h",
+        "sent_at": "2026-10-13T11:05:05.400213",
+        "message": "Kak, pegalnya jangan ditahan kelamaan, nanti jadi saraf kejepit. Slot besok pagi masih ada."
       }
     ]
   }

@@ -218,16 +218,16 @@ export default function MobileDashboard() {
       {/* MAIN CONTAINER */}
       <main className="max-w-7xl mx-auto w-full px-4 md:px-8 mt-5 flex-1">
         
-        {/* NGROK / MOBILE ACCESS BANNER */}
+        {/* 24 JAM CLOUD ONLINE BANNER */}
         <div className="mb-6 p-3.5 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950 border border-slate-800 text-xs text-slate-300 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 shadow-sm">
           <div className="flex items-center gap-2">
-            <span className="text-base">📱</span>
+            <span className="text-base">🚀</span>
             <span>
-              <strong>Akses di HP via ngrok:</strong> Jalankan <code className="bg-slate-950 px-1.5 py-0.5 rounded text-sky-400 font-mono">ngrok http 3000</code> lalu buka link di browser HP Anda.
+              <strong>24 Jam Online (Tanpa Laptop):</strong> Buka di browser HP, lalu pilih <strong>Tambahkan ke Layar Utama (Add to Home Screen)</strong> untuk install sebagai App Native.
             </span>
           </div>
           <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 shrink-0">
-            PWA Ready • Add to Home Screen
+            PWA Standalone • 24/7 Live
           </span>
         </div>
 
