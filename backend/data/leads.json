@@ -1,0 +1,247 @@
+[
+  {
+    "id": "lead_1_1791763174",
+    "wa_id": "6281234567801",
+    "product_key": "totok_saraf",
+    "product_name": "Totok Saraf Makassar",
+    "ad_id": "120252395432280695",
+    "created_at": "2026-10-12T07:59:34.283510",
+    "last_active": "2026-10-12T04:00:15.302967",
+    "status": "follow_up",
+    "bant": {
+      "budget": "qualified",
+      "authority": "decision_maker",
+      "need": "Kopi Robusta Parepare",
+      "timeline": "immediate",
+      "score": 100
+    },
+    "chat_history": [
+      {
+        "sender": "user",
+        "message": "Halo min, kopi robusta parepare nya ready? Berapa harganya ya?",
+        "timestamp": "2026-10-12T07:59:34.283510",
+        "ad_id": "120252395432280695"
+      },
+      {
+        "sender": "cs_agent",
+        "message": "Halo kak! Terima kasih sudah menghubungi kami. Kopi Robusta Asli Parepare (250gr) ready stock cuma Rp 50.000.\nPromo hari ini ada Gratis Ongkir se-Kota Parepare & bisa COD. Rencananya mau pesan berapa bungkus kak dan dikirim ke area mana?",
+        "timestamp": "2026-10-12T07:59:34.283510"
+      },
+      {
+        "sender": "fu_agent",
+        "message": "Halo kak, jadi pesan Kopi nya berapa?",
+        "timestamp": "2026-10-12T08:00:15.303963",
+        "stage": "3h"
+      },
+      {
+        "sender": "fu_agent",
+        "message": "Promo gratis ongkir Makassar hari terakhir kak",
+        "timestamp": "2026-10-13T07:48:44.708833",
+        "stage": "24h"
+      }
+    ],
+    "fu_history": [
+      {
+        "stage": "3h",
+        "sent_at": "2026-10-12T08:00:15.303963",
+        "message": "Halo kak, jadi pesan Kopi nya berapa?"
+      },
+      {
+        "stage": "24h",
+        "sent_at": "2026-10-13T07:48:44.708833",
+        "message": "Promo gratis ongkir Makassar hari terakhir kak"
+      }
+    ],
+    "location": "Makassar"
+  },
+  {
+    "id": "lead_2_1791763174",
+    "wa_id": "6281234567802",
+    "product_key": "totok_saraf",
+    "product_name": "Totok Saraf Makassar",
+    "ad_id": "120252346402370695",
+    "created_at": "2026-10-12T07:59:34.284604",
+    "last_active": "2026-10-11T07:00:15.302967",
+    "status": "follow_up",
+    "bant": {
+      "budget": "qualified",
+      "authority": "decision_maker",
+      "need": "Totok Saraf Makassar",
+      "timeline": "flexible",
+      "score": 90
+    },
+    "chat_history": [
+      {
+        "sender": "user",
+        "message": "Sore dokter, leher dan pundak saya kaku banget. Terapi totok saraf buka jam berapa?",
+        "timestamp": "2026-10-12T07:59:34.284604",
+        "ad_id": "120252346402370695"
+      },
+      {
+        "sender": "cs_agent",
+        "message": "Halo kak! Selamat datang di Klinik Totok Saraf Makassar.\nUntuk terapi saraf servikal/otot, kuota harian kami batasi 4-6 pasien agar penanganan maksimal.\nTarif Rp 150.000 per sesi. Boleh tahu keluhan utama yang dirasakan di bagian mana dan rencana jadwal terapi kapan kak?",
+        "timestamp": "2026-10-12T07:59:34.284604"
+      },
+      {
+        "sender": "fu_agent",
+        "message": "Halo kak, kuota privat Totok Saraf Makassar tersisa 1 slot hari ini. Masih ada keluhan sakitnya?",
+        "timestamp": "2026-10-12T08:00:15.303963",
+        "stage": "24h"
+      },
+      {
+        "sender": "fu_agent",
+        "message": "Halo kak, kuota privat Totok Saraf Makassar tersisa 1 slot hari ini. Masih ada keluhan sakitnya?",
+        "timestamp": "2026-10-12T08:01:34.516716",
+        "stage": "3h"
+      }
+    ],
+    "fu_history": [
+      {
+        "stage": "24h",
+        "sent_at": "2026-10-12T08:00:15.303963",
+        "message": "Halo kak, kuota privat Totok Saraf Makassar tersisa 1 slot hari ini. Masih ada keluhan sakitnya?"
+      },
+      {
+        "stage": "3h",
+        "sent_at": "2026-10-12T08:01:34.516716",
+        "message": "Halo kak, kuota privat Totok Saraf Makassar tersisa 1 slot hari ini. Masih ada keluhan sakitnya?"
+      }
+    ],
+    "location": "Makassar"
+  },
+  {
+    "id": "lead_3_1791768925",
+    "wa_id": "6281198765431",
+    "product_key": "totok_saraf",
+    "product_name": "Totok Saraf Makassar",
+    "category": "jasa_fisik",
+    "ad_id": "120252401406790695",
+    "created_at": "2026-10-12T09:35:25.050291",
+    "last_active": "2026-10-12T09:35:25.050291",
+    "status": "follow_up",
+    "bant": {
+      "budget": "inquired",
+      "authority": "decision_maker",
+      "need": "Totok Saraf Parepare",
+      "timeline": "immediate",
+      "score": 85
+    },
+    "chat_history": [
+      {
+        "sender": "user",
+        "message": "Halo dokter, leher dan pundak saya pegal kaku serta syaraf kejepit. Mau tanya jadwal totok saraf.",
+        "timestamp": "2026-10-12T09:35:25.050291",
+        "ad_id": "120252401406790695"
+      },
+      {
+        "sender": "cs_agent",
+        "message": "Baik kak, kami siapkan jadwal sesi terapi fisik Totok Saraf ya. Untuk hari ini atau besok, lebih nyaman ambil sesi pagi (10:00) atau sesi sore (16:00) kak?",
+        "timestamp": "2026-10-12T09:35:25.050291"
+      },
+      {
+        "sender": "fu_agent",
+        "message": "Halo kak, slot Totok Saraf Makassar sore ini jam 4 & 7 masih ada kak. Mau booking jam berapa? Sesi 60 menit Rp 150rb sudah termasuk pemeriksaan.",
+        "timestamp": "2026-10-12T14:23:28.822847",
+        "stage": "3h"
+      }
+    ],
+    "location": "Makassar",
+    "fu_history": [
+      {
+        "stage": "3h",
+        "sent_at": "2026-10-12T14:23:28.822847",
+        "message": "Halo kak, slot Totok Saraf Makassar sore ini jam 4 & 7 masih ada kak. Mau booking jam berapa? Sesi 60 menit Rp 150rb sudah termasuk pemeriksaan."
+      }
+    ]
+  },
+  {
+    "id": "lead_4_1791768927",
+    "wa_id": "6281198765432",
+    "product_key": "hipnoterapi",
+    "product_name": "Hipnoterapi Makassar",
+    "category": "jasa_mental",
+    "ad_id": "120252401407350695",
+    "created_at": "2026-10-12T09:35:27.091968",
+    "last_active": "2026-10-12T09:35:27.091968",
+    "status": "follow_up",
+    "bant": {
+      "budget": "inquired",
+      "authority": "decision_maker",
+      "need": "Hipnoterapi Parepare",
+      "timeline": "flexible",
+      "score": 75
+    },
+    "chat_history": [
+      {
+        "sender": "user",
+        "message": "Malam min, saya susah tidur insomnia dan cemas overthinking terus. Bisa konsultasi hipnoterapi?",
+        "timestamp": "2026-10-12T09:35:27.091968",
+        "ad_id": "120252401407350695"
+      },
+      {
+        "sender": "cs_agent",
+        "message": "Halo kak! Selamat datang di Klinik Hipnoterapi Dokter Pikiran Parepare.\nSesi hipnoterapi klinis kami sangat aman, privat, dan nyaman untuk membantu meredakan insomnia, kecemasan berlebih, hingga beban trauma.\nBoleh diceritakan keluhan utama yang sedang dihadapi atau apa yang paling mengganggu pikiran akhir-akhir ini kak?",
+        "timestamp": "2026-10-12T09:35:27.091968"
+      },
+      {
+        "sender": "fu_agent",
+        "message": "Kak, untuk insomnia & cemasnya, sesi 1-2 jam Rp 600rb sudah termasuk bonus E-book + Audio senilai 398rb. Mau coba 1 sesi dulu kak?",
+        "timestamp": "2026-10-12T14:23:28.822847",
+        "stage": "3h"
+      }
+    ],
+    "location": "Makassar",
+    "fu_history": [
+      {
+        "stage": "3h",
+        "sent_at": "2026-10-12T14:23:28.822847",
+        "message": "Kak, untuk insomnia & cemasnya, sesi 1-2 jam Rp 600rb sudah termasuk bonus E-book + Audio senilai 398rb. Mau coba 1 sesi dulu kak?"
+      }
+    ]
+  },
+  {
+    "id": "lead_5_1791769661",
+    "wa_id": "628123456789",
+    "product_key": "totok_saraf",
+    "product_name": "Totok Saraf Makassar",
+    "category": "jasa_fisik",
+    "ad_id": "120252401406790695",
+    "created_at": "2026-10-12T09:47:41.963507",
+    "last_active": "2026-10-12T09:47:41.963507",
+    "status": "follow_up",
+    "bant": {
+      "budget": "inquired",
+      "authority": "decision_maker",
+      "need": "Totok Saraf Parepare",
+      "timeline": "flexible",
+      "score": 75
+    },
+    "chat_history": [
+      {
+        "sender": "user",
+        "message": "kak pegal banget pinggangnya, saraf kejepit",
+        "timestamp": "2026-10-12T09:47:41.963507",
+        "ad_id": "120252401406790695"
+      },
+      {
+        "sender": "cs_agent",
+        "message": "Halo kak! Selamat datang di Layanan Totok Saraf Parepare.\nTerapi kami fokus mengurai sumbatan saraf dan otot kaku tanpa obat kimia sehingga langsung enteng di badan.\nBoleh tahu keluhan fisik yang dirasakan di bagian mana (leher/pundak/pinggang/kaki) dan sudah berlangsung berapa lama kak?",
+        "timestamp": "2026-10-12T09:47:41.963507"
+      },
+      {
+        "sender": "fu_agent",
+        "message": "Halo kak, slot Totok Saraf Makassar sore ini jam 4 & 7 masih ada kak. Mau booking jam berapa? Sesi 60 menit Rp 150rb sudah termasuk pemeriksaan.",
+        "timestamp": "2026-10-12T14:23:28.822847",
+        "stage": "3h"
+      }
+    ],
+    "location": "Makassar",
+    "fu_history": [
+      {
+        "stage": "3h",
+        "sent_at": "2026-10-12T14:23:28.822847",
+        "message": "Halo kak, slot Totok Saraf Makassar sore ini jam 4 & 7 masih ada kak. Mau booking jam berapa? Sesi 60 menit Rp 150rb sudah termasuk pemeriksaan."
+      }
+    ]
+  }
+]

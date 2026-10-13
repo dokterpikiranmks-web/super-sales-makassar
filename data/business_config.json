@@ -1,0 +1,55 @@
+{
+  "location": "Makassar - key 973751",
+  "waba": "Kopi Robusta WABA - +62 811-443-327",
+  "products": {
+    "totok_saraf": {
+      "price": 150000,
+      "duration": "60 menit",
+      "cogs": 20000,
+      "color": "green",
+      "gender": "male therapist + gloves + fully clothed patient",
+      "target_tier": "mass_market",
+      "age": "25-60",
+      "economic": "all",
+      "interests": [
+        "Pijat refleksi",
+        "Syaraf kejepit",
+        "Terapi fisik",
+        "Sakit pinggang"
+      ],
+      "daily_budget": 25000,
+      "target_cpl": 15000,
+      "target_closing": 30
+    },
+    "hipnoterapi": {
+      "price_1": 600000,
+      "price_3": 1500000,
+      "duration": "1-2 jam",
+      "cogs_1": 30000,
+      "cogs_3": 90000,
+      "color": "blue",
+      "gender": "male therapist",
+      "target_tier": "middle_up",
+      "age": "28-55",
+      "economic": "menengah ke atas",
+      "interests": [
+        "Entrepreneur",
+        "Professional",
+        "Insomnia",
+        "Kecemasan",
+        "Self development",
+        "Manajemen stres",
+        "Kesehatan mental"
+      ],
+      "exclude": [
+        "Gratis",
+        "Lowongan kerja",
+        "Mahasiswa"
+      ],
+      "daily_budget": 25000,
+      "target_cpl": 25000,
+      "target_closing": 15,
+      "bonus_value": 2398000
+    }
+  }
+}
